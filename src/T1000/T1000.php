@@ -38,4 +38,9 @@ class T1000
     {
         $this->routePattern = $routePattern;
     }
+
+    public function targetLost()
+    {
+        $this->moveToTarget();
+    }
 }
