@@ -6,7 +6,7 @@ use T1000\RoutePattern\NoTargetException;
 
 class ChronologicalRouter implements RoutePatternInterface
 {
-    public function getNextTarget($targets)
+    public function getNextTarget($origin, $targets)
     {
         if(count($targets) == 0){
             throw new NoTargetException();

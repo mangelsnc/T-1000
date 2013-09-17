@@ -5,5 +5,5 @@ require  __DIR__ . "/../../../autoloader.php";
 
 interface RoutePatternInterface
 {
-    public function getNextTarget($targets);
+    public function getNextTarget($origin, $targets);
 }
