@@ -3,8 +3,6 @@ namespace T1000;
 
 require_once "../../autoloader.php";
 
-use T1000\RoutePattern\RoutePattern as RoutePattern;
-
 class T1000
 {
     private $targets;
@@ -25,7 +23,7 @@ class T1000
 
     public function moveToTarget()
     {
-        $target = $this->routePattern->getNextTarget($this->targets);
+        $target = $this->routePattern->getNextTarget($this->position, $this->targets);
         $this->position = $target->getPosition();
     }
 
