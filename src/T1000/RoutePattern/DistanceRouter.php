@@ -31,6 +31,9 @@ class DistanceRouter implements RoutePatternInterface
         return $next;
     }
 
+    /**
+     * Implements the Euclidean Distances Algorithm
+     */
     public function getDistance($origin, $target)
     {
         $x1 = $origin[0];
